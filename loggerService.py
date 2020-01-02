@@ -8,7 +8,7 @@ def log_init():
     try:
         os.makedirs(settings.log_path)
         # set basic logger config
-        logging.basicConfig(filename=str(settings.log_path) + 'daemon.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
+        logging.basicConfig(filename=str(settings.log_path) + 'service.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
     except OSError:
         logging.info('Log dir ' + settings.log_path + ' is already exist')
 
