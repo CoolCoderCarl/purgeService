@@ -1,0 +1,5 @@
+pyinstaller
+os
+logging
+shutil
+configparser
