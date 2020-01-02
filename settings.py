@@ -11,6 +11,7 @@ purge_path = conf['purgedir']['purge_path']
 
 log_path = conf['logdir']['log_path']
 
+# create setting file if not exist
 def createSettingsFile():
     if not os.path.exists('settings.ini'):
         file = open('settings.ini', 'w+')
